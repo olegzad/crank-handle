@@ -5,24 +5,23 @@
     <meta name="description" content="user registration">
     <meta name="author" content="Oleg Zadoyanchuk">
     <meta name="keywords" content="account, registration, sign-up, login">
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <title>Registration Page</title>
   </head>
   <body>
-    <form class="email-first" action="#registration" method="post">
-      <fieldset>
-        <legend>Submit Email to Continue</legend>
-        <div class="control">
-          <input id="email" name="email" placeholder=" Email" required="" type="email">
-        </div>
-        <div class="control">
-          <button id="reveal-form-btn" type="submit">Continue</button>
-        </div>
-        <div class="control">
-          <input id="opt-out" name="opt-out" type="checkbox"><label for="opt-out">Please don't send me marketing information</label>
-        </div>
-      </fieldset>
+    <form class="email-first" id="form-1" action="#form-2" method="post">
+      <div class="control">
+        <label for="email">Submit email to continue</label>
+      </div>
+      <div class="control">
+        <input id="email" name="email" placeholder=" Your email.." required="" type="email">
+        <button id="reveal-form-btn" type="submit">Continue</button>
+      </div>
+      <div class="control">
+        <input id="opt-out" name="opt-out" type="checkbox"><label for="opt-out">Please don't send me marketing information</label>
+      </div>
     </form>
-    <form class="registration" action="index.html" method="post">
+    <form class="registration" id="form-2" action="index.html" method="post">
       <fieldset>
         <legend>Personal Details</legend>
         <div class="control">
@@ -86,10 +85,10 @@
         <div class="control">
           <button type="submit" name="new-account">Sign-Up</button>
         </div>
-        <div class="control">
-          <button type="reset">Clear</button>
-        </div>
       </fieldset>
+      <div class="control">
+        <a href="#form-1">Cancel</a>
+      </div>
     </form>
   </body>
 </html>

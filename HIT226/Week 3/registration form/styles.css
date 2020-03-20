@@ -1,1 +1,26 @@
-/*registration for styesheet. Week 3 HIT226/*
+/*registration for styesheet. Week 3 HIT226*/
+
+html{
+	scroll-behavior:smooth;
+}
+
+body{
+  background-color: rgb(247, 194, 163);
+}
+
+.email-first{
+	width: 100%;
+  margin: 0, auto;
+	background-color: yellow;
+}
+
+.registration{
+	height: 0;
+	overflow: hidden;
+	transition: height 400ms ease;
+}
+
+.registration:target{
+	height:600px;
+	overflow-y:scroll;
+}
