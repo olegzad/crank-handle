@@ -1,26 +1,130 @@
 /*registration for styesheet. Week 3 HIT226*/
 
-html{
+html {
 	scroll-behavior:smooth;
 }
 
-body{
-  background-color: rgb(247, 194, 163);
+body {
+	background: url('images/background_5.jpg') top center no-repeat; /*Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=692186">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=692186">Pixabay</a> */
+	background-size: cover;
 }
 
-.email-first{
-	width: 100%;
-  margin: 0, auto;
-	background-color: yellow;
+.banner {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	border-radius: 4px;
 }
 
-.registration{
+.email-first {
+	width: 30%;
+  margin: auto;
+	margin-top: 4%;
+	padding-bottom: 20px;
+}
+
+.email-first label {
+	color: white;
+	font-size: 24px;
+	display: block;
+	text-align: center;
+}
+
+.email-first button {
+	padding: 4px 8px;
+	display: block;
+	border: none;
+	border-radius: 4px;
+	font-size: 26px;
+	margin: auto;
+	background-color: lightblue;
+}
+
+.email-first button:hover {
+	cursor: pointer;
+	color: rgba(84, 74, 237, 1);
+}
+
+.registration {
+	background-color: rgba(163, 163, 163, 0.8);
+	border-radius: 4px;
+	width: 35%;
+	margin: auto;
 	height: 0;
 	overflow: hidden;
-	transition: height 400ms ease;
+	transition: height 600ms ease-in-out;
 }
 
-.registration:target{
-	height:600px;
-	overflow-y:scroll;
+.registration:target {
+	width: 35%;
+	margin: auto;
+	height: 890px;
+	overflow: hidden;
+	transition: 600ms ease;
+}
+
+input {
+	color: white;
+	width:100%;
+	box-sizing: border-box;
+	border:none;
+	border-radius: 4px;
+	padding: 12px 20px;
+	margin: 8px 0;
+}
+
+input:focus {
+  background-color: lightblue;
+}
+
+select {
+	background-color: white;
+  width: 100%;
+	box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+	padding: 12px 20px;
+	margin: 8px 0;
+}
+
+fieldset {
+	border: none;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+#submit-btn {
+	padding: 4px 8px;
+	float: left;
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+	font-size: 26px;
+	margin: auto;
+	background-color: rgba(94, 224, 43, 1);
+}
+
+#submit-btn:hover {
+	cursor: pointer;
+	color: rgba(84, 74, 237, 1);
+}
+
+.cancel-btn {
+	display: block;
+	border: none;
+	border-radius: 4px;
+	font-size: 26px;
+	margin: auto;
+	cursor: pointer;
+	width: 100px;
+	text-align: center;
+	background: rgba(255, 51, 0, 1);
+	padding: 4px 8px;
+}
+
+.cancel-btn a {
+	text-decoration: none;
+	color: white;
+	cursor: no-drop;
 }
