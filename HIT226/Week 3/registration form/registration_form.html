@@ -5,6 +5,7 @@
     <meta name="description" content="user registration">
     <meta name="author" content="Oleg Zadoyanchuk">
     <meta name="keywords" content="account, registration, sign-up, login">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <title>Registration Page</title>
   </head>
@@ -15,7 +16,7 @@
         <label for="email">Join our email list to continue</label>
       </div>
       <div class="control">
-        <input id="email" name="email" placeholder=" Your email.." required="" type="email">
+        <input id="email" name="email" placeholder="Your email.." required="" type="email">
       </div>
       <div class="control">
         <button id="reveal-form-btn" type="submit">Continue</button>
@@ -25,23 +26,23 @@
       <fieldset>
         <legend>Personal Details</legend>
         <div class="control">
-          <input id="given-names" placeholder=" Given Names" name="given-names" maxlength="30" type="text" required="">
+          <input id="given-names" title="Given Names" placeholder="Given Names" name="given-names" maxlength="30" type="text" required="">
         </div>
         <div class="control">
-          <input id="last-name" placeholder=" Last Name" name="last-name" maxlength="20" type="text" required="">
+          <input id="last-name" title="Last Name" placeholder="Last Name" name="last-name" maxlength="20" type="text" required="">
         </div>
         <div class="control">
           <label for="dob">Date of Birth</label>
         </div>
         <div class="control">
-          <input id="dob" name="dob" type="date" min="1901-01-01" max="2013-12-31">
+          <input id="dob" title="Date of Birth" name="dob" type="date" min="1901-01-01" max="2013-12-31">
         </div>
       </fieldset>
       <fieldset>
         <legend>Address</legend>
         <div class="control">
-          <select id="state" name="state">
-            <option value="">Select State</option>
+          <select id="state" title="State" name="state">
+            <option value="none-selected">Select State</option>
             <option value="australian-capital-territory">Australian Capital Territory</option>
             <option value="new-south-wales">New South Wales</option>
             <option value="northern-territory">Northern Territory</option>
@@ -53,31 +54,31 @@
           </select>
         </div>
         <div class="control">
-          <input id="street-address" placeholder=" Street Address" name="street-address" maxlength="20" type="text">
+          <input id="street-address" title="Street Address" placeholder="Street Address" name="street-address" maxlength="20" type="text">
         </div>
         <div class="control">
-          <input id="suburb" placeholder=" Suburb" name="suburb" maxlength="20" type="text">
+          <input id="suburb" title="Suburb" placeholder="Suburb" name="suburb" maxlength="20" type="text">
         </div>
         <div class="control">
-          <input id="city" placeholder=" City" name="city" maxlength="20" type="text">
+          <input id="city" title="City" placeholder="City" name="city" maxlength="20" type="text">
         </div>
         <div class="control">
-          <input id="postcode" placeholder=" Postcode" name="postcode" maxlength="20" type="text">
+          <input id="postcode" title="Postcode" placeholder="Postcode" name="postcode" maxlength="20" type="text">
         </div>
       </fieldset>
       <fieldset>
-        <legend></legend>
+        <legend>Contact Details</legend>
         <div class="control">
-          <label for="phone-number">Phone Number</label><input id="phone-number" placeholder=" +61" name="phone-number" type="tel" maxlength="20">
+          <input id="phone-number" title="Phone Number" placeholder="Phone Number" name="phone-number" type="tel" maxlength="20">
         </div>
       </fieldset>
       <fieldset>
         <legend>Create Password</legend>
         <div class="control">
-          <input id="password" type="password" placeholder=" Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="" title="Minimum 8 characters containing lowercase, uppercase, and at least one number">
+          <input id="password" type="password" placeholder="Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="" title="Minimum 8 characters containing lowercase, uppercase, and at least one number">
         </div>
         <div class="control">
-          <input id="confirm-password" type="password" placeholder=" Confirm Password" name="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="" title="Minimum 8 characters containing lowercase, uppercase, and at least one number">
+          <input id="confirm-password" type="password" placeholder="Confirm Password" name="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="" title="Minimum 8 characters containing lowercase, uppercase, and at least one number">
         </div>
         <div class="control">
           <button id="submit-btn" type="submit" name="new-account">Sign-Up</button>

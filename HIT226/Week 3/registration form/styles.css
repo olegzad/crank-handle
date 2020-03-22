@@ -5,6 +5,7 @@ html {
 }
 
 body {
+	font-family: sans-serif;
 	background: url('images/background_5.jpg') top center no-repeat; /*Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=692186">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=692186">Pixabay</a> */
 	background-size: cover;
 }
@@ -25,6 +26,7 @@ body {
 }
 
 .email-first label {
+	width: auto;
 	color: white;
 	font-size: 24px;
 	display: block;
@@ -32,13 +34,14 @@ body {
 }
 
 .email-first button {
+	width: auto;
 	padding: 4px 8px;
 	display: block;
 	border: none;
 	border-radius: 4px;
 	font-size: 26px;
 	margin: auto;
-	background-color: lightblue;
+	background-color: rgba(61, 224, 222, 1);
 }
 
 .email-first button:hover {
@@ -53,19 +56,20 @@ body {
 	margin: auto;
 	height: 0;
 	overflow: hidden;
-	transition: height 600ms ease-in-out;
+	transition: 800ms ease;
 }
 
 .registration:target {
 	width: 35%;
 	margin: auto;
-	height: 890px;
+	height: 100%;
+	padding: 8px;
 	overflow: hidden;
-	transition: 600ms ease;
+	transition: 800ms ease;
 }
 
 input {
-	width:100%;
+	width: 100%;
 	box-sizing: border-box;
 	border:none;
 	border-radius: 4px;
@@ -85,6 +89,7 @@ select {
   border-radius: 4px;
 	padding: 12px 20px;
 	margin: 8px 0;
+	cursor: pointer;
 }
 
 fieldset {
