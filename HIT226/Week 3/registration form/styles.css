@@ -1,4 +1,4 @@
-/*registration for styesheet. Week 3 HIT226*/
+/*registration form styesheet. Week 3 HIT226*/
 
 html {
 	scroll-behavior:smooth;
@@ -18,6 +18,7 @@ body {
 	border-radius: 4px;
 }
 
+/* styling for the initial email submission from  */
 .email-first {
 	width: 30%;
   margin: auto;
@@ -33,22 +34,25 @@ body {
 	text-align: center;
 }
 
-.email-first button {
-	width: auto;
-	padding: 4px 8px;
+.continue a {
+	width: 100px;
+	padding: 8px 8px;
 	display: block;
 	border: none;
 	border-radius: 4px;
 	font-size: 26px;
+	text-decoration: none;
 	margin: auto;
 	background-color: rgba(61, 224, 222, 1);
 }
 
-.email-first button:hover {
+.continue a:hover {
 	cursor: pointer;
 	color: rgba(84, 74, 237, 1);
 }
 
+/* styling for main form */
+/* form closed */
 .registration {
 	background-color: rgba(163, 163, 163, 0.8);
 	border-radius: 4px;
@@ -58,16 +62,17 @@ body {
 	overflow: hidden;
 	transition: 800ms ease;
 }
-
+/* form revealed */
 .registration:target {
 	width: 35%;
 	margin: auto;
-	height: 100%;
+	height: auto;
 	padding: 8px;
 	overflow: hidden;
 	transition: 800ms ease;
 }
 
+/* global styling for <input> tags */
 input {
 	width: 100%;
 	box-sizing: border-box;
@@ -77,10 +82,12 @@ input {
 	margin: 8px 0;
 }
 
+/* input field selected */
 input:focus {
   background-color: lightblue;
 }
 
+/* styling for <select> tag  */
 select {
 	background-color: white;
   width: 100%;
@@ -92,12 +99,14 @@ select {
 	cursor: pointer;
 }
 
+/* global styling for <fieldset> tags */
 fieldset {
 	border: none;
 	font-size: 20px;
 	font-weight: lighter;
 }
 
+/* green 'submit' button styling */
 #submit-btn {
 	padding: 4px 8px;
 	float: left;
@@ -114,6 +123,7 @@ fieldset {
 	color: rgba(84, 74, 237, 1);
 }
 
+/* red 'cancel' button styling */
 .cancel-btn {
 	display: block;
 	border: none;
